@@ -301,3 +301,143 @@
 // console.log(person.name);
 // console.log(person.age);
 // console.log(person.location);
+
+
+// let obj = {
+//     name:"Subin",
+//     age:28,
+//     greet: function (){
+//         console.log("Hello Subin");
+//     }
+
+// };
+
+// console.log(obj.name) //object property
+// obj.greet() // object method
+
+// function Animal(name){  //parent class
+//     this.name = name;
+// }
+
+
+// Animal.prototype.sayName = function() {
+//     console.log("My name is " + this.name);
+// };
+
+// function Dog(name, breed) {
+//     Animal.call(this, name);
+//     this.breed = breed;
+// }
+
+// Dog.prototype = Object.create(Animal.prototype);
+// Dog.prototype.constructor = Dog;
+
+// Dog.prototype.bark = function() {
+//     console.log("Woof!");
+// }
+
+// let myDog = new Dog("Simba", "German Shepherd"); // every function in js can act as a constructor using the new keyword
+// myDog.sayName();
+// myDog.bark();
+
+// function Person(name){
+//     this.name = name;
+// }
+
+// Person.prototype.sayName = function() {
+//     console.log("My name is " + this.name);
+// }
+
+// function Male(name, age) {
+//     Person.call(this, name);
+//     this.age = age;
+// }
+
+// Male.prototype = Object.create(Person.prototype);
+// Male.prototype.constructor = Male;
+
+// Male.prototype.hello = function() {
+//     console.log("My name is " + this.name ," and I'm " + this.age + "years old")
+// }
+
+// let detail = new Male("Subin", 28);
+// detail.sayName();
+// detail.hello();
+
+// let name = "Subin"
+// let age = "Twenty eight"
+// let greeting = `Hello, ${name} you are ${age} years old`
+// console.log(greeting);
+
+// let numbers = [1, 2, 3, 4, 5]
+// let [a, b, c, d] = numbers
+// console.log(a);
+
+// let person = {
+//     name : "Subin",
+//     age : 28,
+//     location : "Nilambur"
+// }
+
+// let {name , age} = person
+// console.log(name, age)
+
+// function greeting(name='Guest') // default parameter
+// {
+//     console.log(`Hello, ${name}`);
+// }
+
+// greeting('Subin')
+// greeting()
+
+// function sum(a,b,c,...rest){
+//     console.log(rest);
+// }
+// //list of item converted to array
+// sum(1,2,3,4,5,8,0,9)
+
+// let spread = [0,1, 2, 3, 4, 5]
+// // converted an array into list
+// console.log(Math.min(...spread))
+
+// export const name = "Subin"
+// export function sayHello() {
+//     console.log("Hello!");
+// }
+
+// try {
+//     const dividend = window.prompt("Enter a dividend")
+//     const divisor = window.prompt("Enter a divisor")
+
+//     if(divisor = 0){
+//         throw new Error("You can't divide by zero")
+//     }
+
+//     const result = dividend / divisor
+//     console.log(result)
+// }
+
+// catch(error){
+//     console.error(error)
+   
+    
+// }
+
+// finally {
+//     console.log("This code executes anyway..")
+// }
+
+// console.log("This is the example try catch finally error handling..")
+
+
+
+// function x(num, operation){
+
+//     return operation(num)
+// }
+
+// function y(x){
+//     return x * 2;
+// }
+
+// console.log(x(3, y));
