@@ -441,3 +441,207 @@
 // }
 
 // console.log(x(3, y));
+
+
+// function x(num, operation){
+
+//     return operation(num)
+// }
+
+
+// function y(x){
+//     return x * 2
+// }
+
+// console.log(x(3, y));
+
+
+// function x() {
+
+//     return function y() {
+//         console.log("This is a return function");
+//     }
+// }
+
+// let a = x()
+// a()
+
+// const numbers = [1, 2, 3, 4, 5]
+
+// let double = numbers.map((x) =>{
+
+//     return x * 2
+
+// })
+
+// console.log(double);
+
+// const numbers = [1, 3, 4, 7]
+
+// let even = numbers.filter((x) =>{
+//     return x % 2 == 0;
+// })
+
+// console.log(even);
+
+// const numbers  = [1, 9 , 4, 6, 7]
+
+// let sum = numbers.reduce((acc, curr) =>{
+//     return acc + curr;
+// })
+
+// console.log(sum);
+
+// const array = [1, 3, 5, 7]
+
+// function x(a, element){
+//     return [...a, element]
+// }
+
+// let y = x(array, 4)
+// console.log(y);
+
+
+// let b = 3
+
+// function ImpureFn(a){
+//     return a + b;
+// }
+
+// console.log(ImpureFn(2));
+
+// function x(){
+
+//     let a = 2;
+
+//     function y(b){
+//         return a + b;
+//     }
+
+//     return y;
+// }
+
+// let z = x()
+// console.log(z(2));
+
+// for(var i = 0; i < 3; i++){
+
+//     const log = () => {
+//         console.log(i)
+//     }
+
+//     setTimeout(log, 1000)
+// }
+
+
+// function z(){
+//     var b = 95;
+
+
+//     function x(){
+//         var a = 10;
+//         a = 100;
+//         return function y(){
+//             console.log(a, b);
+//         }
+//     }   
+//     let d = x();
+//     d();
+
+// } 
+// z();
+
+function x(){
+
+    return new Promise ((resolve, reject) =>{
+        setTimeout(()=>{
+
+            const sayhello= true;
+            if (sayhello){
+                resolve("Hello");
+
+            }
+            else {
+                reject("hmm..")
+            }
+            
+        }, 1000);
+        
+
+    })
+   
+}
+
+
+function y(){
+
+    return new Promise ((resolve, reject) =>{
+
+        setTimeout(()=> {
+
+            const sayHai = true;
+
+            if (sayHai){
+                resolve("Hai")
+            }
+            else{
+                reject("half smile..")
+            }
+            
+        }, 4000);
+       
+    })
+   
+}
+
+
+function z(){
+
+    return new Promise((resolve, reject) =>{
+
+        
+        setTimeout(()=> {
+            const sayHey = false;
+
+        if (sayHey){
+            resolve("Hey")
+        }
+
+        else{
+            reject('never mind')
+        }
+           
+        }, 5000);
+
+    
+
+    })
+
+}
+   
+
+async function complete(){
+
+    try{
+
+        const sayhelloresult = await x();
+        console.log(sayhelloresult);
+    
+        const sayHairesult = await y();
+        console.log(sayHairesult)
+    
+        const sayHeyresult = await z();
+        console.log(sayHeyresult)
+
+    }
+
+    catch(error) {
+        console.error(error)
+    }
+
+   
+
+
+}
+
+complete();
