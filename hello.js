@@ -551,97 +551,110 @@
 // } 
 // z();
 
-function x(){
+// function x(){
 
-    return new Promise ((resolve, reject) =>{
-        setTimeout(()=>{
+//     return new Promise ((resolve, reject) =>{
+//         setTimeout(()=>{
 
-            const sayhello= true;
-            if (sayhello){
-                resolve("Hello");
+//             const sayhello= true;
+//             if (sayhello){
+//                 resolve("Hello");
 
-            }
-            else {
-                reject("hmm..")
-            }
+//             }
+//             else {
+//                 reject("hmm..")
+//             }
             
-        }, 1000);
+//         }, 1000);
         
 
-    })
+//     })
    
-}
+// }
 
 
-function y(){
+// function y(){
 
-    return new Promise ((resolve, reject) =>{
+//     return new Promise ((resolve, reject) =>{
 
-        setTimeout(()=> {
+//         setTimeout(()=> {
 
-            const sayHai = true;
+//             const sayHai = true;
 
-            if (sayHai){
-                resolve("Hai")
-            }
-            else{
-                reject("half smile..")
-            }
+//             if (sayHai){
+//                 resolve("Hai")
+//             }
+//             else{
+//                 reject("half smile..")
+//             }
             
-        }, 4000);
+//         }, 4000);
        
-    })
+//     })
    
-}
+// }
 
 
-function z(){
+// function z(){
 
-    return new Promise((resolve, reject) =>{
+//     return new Promise((resolve, reject) =>{
 
         
-        setTimeout(()=> {
-            const sayHey = false;
+//         setTimeout(()=> {
+//             const sayHey = false;
 
-        if (sayHey){
-            resolve("Hey")
-        }
+//         if (sayHey){
+//             resolve("Hey")
+//         }
 
-        else{
-            reject('never mind')
-        }
+//         else{
+//             reject('never mind')
+//         }
            
-        }, 5000);
+//         }, 5000);
 
     
 
-    })
+//     })
 
-}
+// }
    
 
-async function complete(){
+// async function complete(){
 
-    try{
+//     try{
 
-        const sayhelloresult = await x();
-        console.log(sayhelloresult);
+//         const sayhelloresult = await x();
+//         console.log(sayhelloresult);
     
-        const sayHairesult = await y();
-        console.log(sayHairesult)
+//         const sayHairesult = await y();
+//         console.log(sayHairesult)
     
-        const sayHeyresult = await z();
-        console.log(sayHeyresult)
+//         const sayHeyresult = await z();
+//         console.log(sayHeyresult)
 
-    }
+//     }
 
-    catch(error) {
-        console.error(error)
-    }
+//     catch(error) {
+//         console.error(error)
+//     }
 
    
 
 
+// }
+
+// complete();
+
+
+
+// console.log(a)
+
+// const a = 10;
+
+const sum = (a,b) => {
+    return a + b;
 }
 
-complete();
+result = sum(5, 2)
+console.log(result);
