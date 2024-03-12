@@ -21,5 +21,6 @@ let double = array.map((x) =>{
 })
 
 console.log(double);
+console.log(array);
 
 
