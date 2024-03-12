@@ -21,6 +21,10 @@ let double = array.map((x) =>{
 })
 
 console.log(double);
+<<<<<<< HEAD
 console.log(array);
 
+=======
+console.log("trial")
+>>>>>>> 7e685cf9931cd4d6284c145c425903c3afffd954
 
